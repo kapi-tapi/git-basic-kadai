@@ -1,0 +1,30 @@
+PS C:\Users\askuv\GitHub_Tutorial> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\askuv\GitHub_Tutorial
+
+
+Mode                 LastWriteTime         Length Name     
+----                 -------------         ------ ----      
+d-----        2025/08/03     23:46                git_chall 
+                                                  enge      
+
+
+PS C:\Users\askuv\GitHub_Tutorial> cd git_challenge
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> git init
+Initialized empty Git repository in C:/Users/askuv/GitHub_Tutorial/git_challenge/.git/
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> cat hello_world.txt
+Hello, world!
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> cat hello_world.txt                         t
+Hello, world!
+こんにちは、世界！
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> git add hello_world.txt                     t
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> git commit -m "日本語訳を追記"              t
+[main cb1e65b] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge> git log --oneline
+cb1e65b (HEAD -> main) 日本語訳を追記
+b061277 hello_world.txtを追加
+PS C:\Users\askuv\GitHub_Tutorial\git_challenge>
